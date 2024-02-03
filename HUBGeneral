@@ -2278,7 +2278,7 @@ div.modal-body {
     };
 
             elencoimdb.addEventListener('click', function () {
-        var site = $('#movieId').val();
+        var site = ($('#movieId').val() !== '') ? $('#movieId').val() : $('#imdb').val();
         site = site.replace(/imdb/g, "www.imdb");
         $.ajax({
             url : "https://www.fw.artvetro.com.br/filmes2-imdb.php",
@@ -2309,7 +2309,7 @@ div.modal-body {
     })
 
             elencotmdb.addEventListener('click', function () {
-        var site = $('#movieId').val();
+        var site = ($('#movieId').val() !== '') ? $('#movieId').val() : $('#imdb').val();
         site = site.replace(/imdb/g, "www.imdb");
         $.ajax({
             url : "https://www.fw.artvetro.com.br/filmes2-tmdb.php",
@@ -2340,7 +2340,7 @@ div.modal-body {
     })
 
             elencosemfoto.addEventListener('click', function () {
-        var site = $('#movieId').val();
+        var site = ($('#movieId').val() !== '') ? $('#movieId').val() : $('#imdb').val();
         site = site.replace(/imdb/g, "www.imdb");
         $.ajax({
             url : "https://www.fw.artvetro.com.br/filmes.php",
