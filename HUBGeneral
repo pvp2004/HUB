@@ -1986,7 +1986,7 @@ if (match && match[1]) {
 }
 
 
-if (window.location.href.indexOf("https://hubwarez.tv/forum/postador.php?do=novotitulo") != -1){
+if (window.location.href.indexOf("https://hubwarez.tv/forum/postador.php?do=novotitulo") != -1 || window.location.href.indexOf('https://hubwarez.tv/forum/postador.php?do=editartitulo') != -1){
     var elencoimdb = new Image();
         var elencotmdb = new Image();
         var elencotvdb = new Image();
